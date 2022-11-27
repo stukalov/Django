@@ -1,0 +1,17 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+{{ flatpage.title }} - First page
+{% endblock title %}
+
+{% block content %}
+    <header class="bg-primary bg-gradient text-white">
+        <div class="container px-4 text-center">
+            <h1 class="fw-bolder">{{ flatpage.title }}</h1>
+        </div>
+    </header>
+
+    <div style="font-size: 2em; color: blue; background: #f8f8f8; overflow: auto; width: auto; height: 10rem; border: solid #d1d9d7; border-width: .2em .2em .2em .2em; padding: .2em .6em;">
+        {{ flatpage.content }}
+    </div>
+{% endblock content %}

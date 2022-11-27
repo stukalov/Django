@@ -1,0 +1,14 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+{{ flatpage.title }} - Second page
+{% endblock title %}
+
+{% block content %}
+    <div>
+        {{ flatpage.content }}
+    </div>
+    <div>
+        Только для залогиненных пользователей
+    </div>
+{% endblock content %}
